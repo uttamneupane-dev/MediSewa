@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Medisewa.API/Medisewa.API.csproj" />
+    <Project Path="src/Medisewa.Application/Medisewa.Application.csproj" />
+    <Project Path="src/Medisewa.Domain/Medisewa.Domain.csproj" />
+    <Project Path="src/Medisewa.Infrastructure/Medisewa.Infrastructure.csproj" />
+  </Folder>
+</Solution>
