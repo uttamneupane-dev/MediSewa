@@ -1,0 +1,375 @@
+.page {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 16rem;
+  background-color: white;
+  border-right: 1px solid #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.sidebarHeader {
+  padding: 1.5rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logoMark {
+  width: 2rem;
+  height: 2rem;
+  background-color: #2563eb;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoMarkText {
+  color: white;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.logoName {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.nav {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.navItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #4b5563;
+  transition: background-color 0.15s, color 0.15s;
+  text-align: left;
+}
+
+.navItem:hover {
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+.navItemActive {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+/* Sidebar footer */
+.sidebarFooter {
+  padding: 1rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.userRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.avatar {
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: #dbeafe;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.avatarText {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.userInfo {
+  min-width: 0;
+}
+
+.userName {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #111827;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userRole {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.logoutBtn {
+  width: 100%;
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-align: left;
+  padding: 0.375rem 0.5rem;
+  border-radius: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.logoutBtn:hover {
+  background-color: #f9fafb;
+  color: #374151;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  overflow: auto;
+}
+
+.mainInner {
+  padding: 2rem;
+  max-width: 64rem;
+}
+
+.pageHeader {
+  margin-bottom: 2rem;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.greetingName {
+  text-transform: capitalize;
+}
+
+.greetingSub {
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+/* CTA banner */
+.ctaBanner {
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.ctaTitle {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.ctaSub {
+  color: #bfdbfe;
+  font-size: 0.875rem;
+}
+
+.ctaBtn {
+  background-color: white;
+  color: #2563eb;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+  transition: background-color 0.15s;
+}
+
+.ctaBtn:hover {
+  background-color: #eff6ff;
+}
+
+/* Stats */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.statIcon {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.statValue {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.statLabel {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Appointments table */
+.appointmentsCard {
+  background-color: white;
+  border-radius: 1rem;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.appointmentsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.appointmentsTitle {
+  font-weight: 600;
+  color: #111827;
+}
+
+.newLink {
+  font-size: 0.875rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.newLink:hover {
+  color: #1d4ed8;
+}
+
+.appointmentRow {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid #f9fafb;
+}
+
+.appointmentRow:last-child {
+  border-bottom: none;
+}
+
+.doctorAvatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #dbeafe;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.doctorIcon {
+  color: #2563eb;
+  font-size: 0.875rem;
+}
+
+.aptInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.aptDoctor {
+  font-weight: 500;
+  color: #111827;
+  font-size: 0.875rem;
+}
+
+.aptSpecialty {
+  color: #6b7280;
+  font-size: 0.75rem;
+  margin-top: 0.125rem;
+}
+
+.aptDate {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.aptDateText {
+  font-size: 0.875rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.aptTime {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* Status badges */
+.statusBadge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  text-transform: capitalize;
+  flex-shrink: 0;
+}
+
+.statusConfirmed {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.statusPending {
+  background-color: #fef9c3;
+  color: #a16207;
+}
+
+.statusCancelled {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
