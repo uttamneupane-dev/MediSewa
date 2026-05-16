@@ -51,3 +51,7 @@ Desktop.ini
 
 ## VS Code
 .vscode/
+
+## Frontend
+frontend/node_modules/
+frontend/dist/
